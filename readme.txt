@@ -5,7 +5,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Tags: gravity forms, gravity forms file upload, gravity forms file uploader, gravity forms uploader, plupload, gravity forms videos, gravity forms youtube, youtube uploader, youtube file uploader
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.13
+Stable tag: 1.14
 
 Chunked Multiple file uploads, Auto upload of videos to YouTube & Brightcove, Files stored in WP Media Library, Advanced options.
 
@@ -22,6 +22,7 @@ Chunked Multiple file uploads, Auto upload of videos to YouTube & Brightcove, Fi
 * Added security and validation
 * Bonus Terms of Service Gravity Forms field with optional submit disable feature
 * Creating posts with gavity forms? All uploads are added as post attachments and can be displayed with the [get_adv_uploads] shortcode
+* Also use the wordpress gallery shortcode to display any images attached to a post
 
 This is the Gravity Forms uploader plugin for those who need a little more than the default multi file upload of Gravity Forms v1.8. 
 
@@ -106,6 +107,9 @@ This option can be hit and miss in some older browsers, that said it works in mo
 
 == Changelog ==
 
+= 1.14 =
+* Updated Redux Options Framework to address bug when saving taxonomies in posts
+
 = 1.13 =
 * Added support for creating posts with gravity forms. All uploads are added as post attachments
 * New option to disable file renaming and maintain original file names (see security setting in plugin options)
@@ -127,6 +131,9 @@ This option can be hit and miss in some older browsers, that said it works in mo
 * Inital commit to plugin repo
 
 == Upgrade Notice ==
+
+= 1.14 =
+* Addresses bug where Redux Options Framework may have caused problems with post taxonomies
 
 = 1.13 =
 Fixes some problems with file uploads  and validation on some server setups.
