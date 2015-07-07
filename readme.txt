@@ -5,7 +5,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 Tags: gravity forms, gravity forms file upload, gravity forms file uploader, gravity forms uploader, plupload, gravity forms videos, gravity forms youtube, youtube uploader, youtube file uploader
 Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.25
+Stable tag: 1.26
 
 Chunked Multiple file uploads, Auto upload of videos to YouTube & Brightcove, Files stored in WP Media Library, Advanced options.
 
@@ -47,8 +47,6 @@ Large File Support - Enable chunked file uploads to allow for large files upload
 Advanced Customization - If you are a dev and need even more control there are a number of filters and actions to hook into. Also you can make a copy of the ini scripts used to generate each UI. Place them in your theme and just wp_dequeue_script then enqueue_script with your script path and it will have access to all the localized vars.
 
 Please Note -- When using the Video Uploader option, although actual file upload takes place asynchronously. If your server script timeouts are too short you will have problems with larger video files. That said the plugin does try to increase the timeout but it really depends on your hosting setup.
-
-[cd_verify id='14563']
 
 == Installation ==
 
@@ -132,6 +130,9 @@ This option can be hit and miss in some older browsers, that said it works in mo
 
 == Changelog ==
 
+= 1.26 =
+* Filenames are now URL encoded to fix issues with spaces in filenames
+
 = 1.25 =
 * Form Submit button now hidden until uploads are completed OR there are no files in the upload queue.
 * Updated Plupload framework to v2.1.2, may address some mobile issues?
@@ -195,6 +196,9 @@ This option can be hit and miss in some older browsers, that said it works in mo
 * Inital commit to plugin repo
 
 == Upgrade Notice ==
+
+= 1.26 =
+* Filenames are now URL encoded to fix issues with spaces in filenames
 
 = 1.25 =
 * Form Submit button now hidden until uploads are completed OR there are no files in the upload queue.
